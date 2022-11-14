@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="css/fontello.css">
+    <title>MiSudoku</title>
+    <link rel="shortcut icon" type="image/png" href="misudoku1.png"/>
+    <script src="codigo1.js"></script>
+</head>
+<body>
+   <header id="inicioPag">
+   <img src="misudoku1.png" alt="Imagen de prueba">
+       <h1>Sudoku</h1>
+       <h2>Juega y diviertete </h2>
+   </header>
+    
+   
+   <section class="acerca"> 
+        <h2> Juego </h2>
+        <hr>
+        <div class="medio">
+            <label class="etiqueta" >Tamaño sudoku</label>
+            
+            <div>
+                <input type="button" id="cuatro" class="botonTamanyo" onclick="canvas4('cv00');" value="4x4">
+                <!-- <button id="nueve" onclick="canvas9('cv00');">9x9</button> -->
+                <input type="button" id="nueve" class="botonTamanyo" onclick="canvas9('cv00');" value="9x9">
+
+            </div>
+            
+        </div>
+
+        <div class="packsudokuu">
+
+            <canvas id="cv00" ></canvas>
+            <div id="bEmpieza">
+                <button id="dale" onclick="empiezaPartida();">Empezar</button>
+    
+            </div>
+        
+        
+        </div>
+
+        <div id="losfallos"></div>
+        
+        
+        
+
+
+    </section>
+    
+   
+   
+   
+    <footer>
+        <div>
+            <p>&copy; PCW <time datetime="2020-02">2020</time></p>
+       </div>
+       <div>
+        <a href="acerca.html">CONTACTO</a>
+       </div>
+       <div>
+        <a class="icon-up-big" href="#inicioPag">Volver arriba</a>
+       </div>
+       
+   </footer>
+
+   <script>prepararCanvas4();</script>
+</body>
+
+<!-- <script>porencima();</script> -->
+</html>
